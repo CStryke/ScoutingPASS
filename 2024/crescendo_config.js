@@ -89,7 +89,7 @@ var config_data = `
       "choices": {
       "m": "Most/all of the match<br>",
       "p": "Part of the match<br>",
-      "n": "Never<br>"
+      "n": "Never"
       },
       "defaultValue": "x"
     },
