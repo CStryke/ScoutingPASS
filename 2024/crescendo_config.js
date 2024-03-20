@@ -29,7 +29,8 @@ var config_data = `
       "code": "t",
       "type": "team",
       "min": 1,
-      "max": 9999
+      "max": 9999,
+      "required": "true"
     },
     { "name": "Auto Start Position",
       "code": "as",
@@ -37,7 +38,8 @@ var config_data = `
       "filename": "2024/field_image_renumbered.png",
       "clickRestriction": "one",
       "allowableResponses": "1 12 13 24 25 36 37 48 49 60 61 72",
-      "shape": "circle 5 black red true"
+      "shape": "circle 5 black red true",
+      "required": "true"
     }
   ],
   "auton": [
