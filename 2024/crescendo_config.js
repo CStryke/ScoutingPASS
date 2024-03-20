@@ -54,7 +54,7 @@ var config_data = `
     { "name": "Auto Route",
       "code": "ar",
       "type": "image",
-      "filename": "2024/field_image_renumbered.png",
+      "filename": "2024/field_image_renumbered.png"
     }
   ],
   "teleop": [
@@ -104,7 +104,7 @@ var config_data = `
       "code": "co",
       "type": "text",
       "size": 45,
-      "maxSize": 100
+      "maxSize": 300
     }
   ]
 }`;
