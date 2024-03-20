@@ -50,6 +50,11 @@ var config_data = `
     { "name": "Notes Scored",
       "code": "ascore",
       "type": "counter"
+    },
+    { "name": "Auto Route",
+      "code": "ar",
+      "type": "image",
+      "filename": "2024/field_image_renumbered.png",
     }
   ],
   "teleop": [
