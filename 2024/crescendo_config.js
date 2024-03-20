@@ -15,18 +15,7 @@ var config_data = `
     { "name": "Event",
       "code": "e",
       "type": "event",
-      "defaultValue": "2023tnkn",
-      "required": "true"
-    },
-    { "name": "Match Level",
-      "code": "l",
-      "type": "level",
-      "choices": {
-        "qm": "Quals<br>",
-        "sf": "Semifinals<br>",
-        "f": "Finals"
-      },
-      "defaultValue": "qm",
+      "defaultValue": "2024onwat",
       "required": "true"
     },
     { "name": "Match #",
@@ -36,24 +25,11 @@ var config_data = `
       "max": 150,
       "required": "true"
     },
-    { "name": "Robot",
-      "code": "r",
-      "type": "robot",
-      "choices": {
-        "r1": "Red-1",
-        "b1": "Blue-1<br>",
-        "r2": "Red-2",
-        "b2": "Blue-2<br>",
-        "r3": "Red-3",
-        "b3": "Blue-3"
-      },
-      "required":"true"
-    },
     { "name": "Team #",
       "code": "t",
       "type": "team",
       "min": 1,
-      "max": 99999
+      "max": 9999
     },
     { "name": "Auto Start Position",
       "code": "as",
@@ -69,12 +45,8 @@ var config_data = `
       "code": "al",
       "type": "bool"
     },
-    { "name": "Amp Scores",
-      "code": "aas",
-      "type": "counter"
-    },
-    { "name": "Speaker Scores",
-      "code": "ass",
+    { "name": "Notes Scored",
+      "code": "ascore",
       "type": "counter"
     }
   ],
@@ -87,34 +59,18 @@ var config_data = `
       "code": "tss",
       "type": "counter"
     },
-    { "name": "Times Amplified",
-      "code": "tta",
+    { "name": "Notes Fed",
+      "code": "fed",
       "type": "counter"
-    },
-    { "name": "Pickup From",
-      "code": "tpu",
-      "type": "radio",
-      "choices": {
-        "s": "Source<br>",
-        "f": "Floor<br>",
-        "b": "Both<br>",
-        "x": "Not Attempted"
-      },
-      "defaultValue": "x"
     }
   ],
   "endgame": [
-    { "name": "Stage Timer",
-      "code": "dt",
-      "type": "timer"
-    },
     { "name": "Final Status",
       "code": "fs",
       "type":"radio",
       "choices": {
         "p": "Parked<br>",
         "o": "Onstage<br>",
-        "s": "Onstage (Spotlit)<br>",
         "h": "Harmony<br>",
         "a": "Attempted but failed<br>",
         "x": "Not attempted"
@@ -127,63 +83,21 @@ var config_data = `
     }
   ],
   "postmatch": [
-    { "name": "Driver Skill",
-      "code": "ds",
-      "type": "radio",
-      "choices": {
-        "n": "Not Effective<br>",
-        "a": "Average<br>",
-        "v": "Very Effective<br>",
-        "x": "Not Observed"
-      },
-      "defaultValue": "x"
-    },
-    { "name": "Defense Rating",
-      "code": "dr",
-      "type": "radio",
-      "choices": {
-        "b": "Below Average<br>",
-        "a": "Average<br>",
-        "g": "Good<br>",
-        "e": "Excellent<br>",
-        "x": "Did not play defense"
-      },
-      "defaultValue": "x"
-    },
-    { "name": "Speed Rating",
-      "code": "sr",
-      "type": "radio",
-      "choices": {
-        "1": "1 (slow)<br>",
-        "2": "2<br>",
-        "3": "3<br>",
-        "4": "4<br>",
-        "5": "5 (fast)"
-      },
-      "defaultValue":"3"
-    },
     { "name": "Died/Immobilized",
       "code": "die",
-      "type": "bool"
-    },
-    { "name": "Tippy<br>(almost tipped over)",
-      "code": "tip",
-      "type": "bool"
-    },
-    { "name": "Dropped Notes (>2)",
-      "code": "dn",
-      "type": "bool"
-    },
-    { "name": "Make good<br>alliance partner?",
-      "tooltip": "Would you want this robot on your alliance in eliminations?",
-      "code": "all",
-      "type": "bool"
+      "type": "radio",
+      "choices": {
+      "m": "Most/all of the match<br>",
+      "p": "Part of the match<br>",
+      "n": "Never<br>"
+      },
+      "defaultValue": "x"
     },
     { "name": "Comments",
       "code": "co",
       "type": "text",
-      "size": 15,
-      "maxSize": 55
+      "size": 45,
+      "maxSize": 100
     }
   ]
 }`;
