@@ -55,6 +55,7 @@ var config_data = `
       "code": "ar",
       "type": "field_image",
       "filename": "2024/field_image_renumbered.png"
+      "clickRestriction": "zero",
     }
   ],
   "teleop": [
