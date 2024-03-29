@@ -78,7 +78,7 @@ var config_data = `
       "code": "img",
       "type": "clickable_image",
       "filename": "2024/field_image_Windsor.png",
-      "clickRestriction": "zero",
+      "clickRestriction": "one",
       "shape": "circle 5 black red true"
     }
   ],
