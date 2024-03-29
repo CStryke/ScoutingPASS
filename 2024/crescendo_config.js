@@ -31,15 +31,6 @@ var config_data = `
       "min": 1,
       "max": 9999,
       "required": "true"
-    },
-    { "name": "Auto Start Position",
-      "code": "as",
-      "type": "clickable_image",
-      "filename": "2024/field_image.png",
-      "clickRestriction": "one",
-      "allowableResponses": "1 12 13 24 25 36 37 48 49 60 61 72",
-      "shape": "circle 5 black red true",
-      "required": "true"
     }
   ],
   "auton": [
@@ -50,6 +41,45 @@ var config_data = `
     { "name": "Notes Scored",
       "code": "ascore",
       "type": "counter"
+    },
+    { "name": "Note 1",
+      "code": "one",
+      "type": "bool"
+    },
+    { "name": "Note 2",
+      "code": "two",
+      "type": "bool"
+    },
+    { "name": "Note 3",
+      "code": "three",
+      "type": "bool"
+    },
+    { "name": "Note 4",
+      "code": "four",
+      "type": "bool"
+    },
+    { "name": "Note 5",
+      "code": "five",
+      "type": "bool"
+    },
+    { "name": "Note 6",
+      "code": "six",
+      "type": "bool"
+    },
+    { "name": "Note 7",
+      "code": "seven",
+      "type": "bool"
+    },
+    { "name": "Note 8",
+      "code": "eight",
+      "type": "bool"
+    },
+    { "name": "Field Image",
+      "code": "img",
+      "type": "clickable_image",
+      "filename": "2024/field_image_Windsor.png",
+      "clickRestriction": "zero",
+      "shape": "circle 5 black red true",
     }
   ],
   "teleop": [
